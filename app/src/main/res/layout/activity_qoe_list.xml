@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".qoe_list">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/GSMim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/gsm"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/UMTSim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/umt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LTEim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/lte"/>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:id="@+id/typeQoe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/cellIDQoe"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:hint="2345678987"
+                />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Download Rate : "
+                android:textStyle="bold"
+                android:textColorHint="@color/black"/>
+            <TextView
+                android:id="@+id/download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Upload Rate : "
+                android:textStyle="bold"
+                android:textColorHint="@color/black"/>
+            <TextView
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Latency : "
+                android:textStyle="bold"
+                android:textColorHint="@color/black"/>
+            <TextView
+                android:id="@+id/latency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="90dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Jitter : "
+                android:textStyle="bold"
+                android:textColorHint="@color/black"/>
+            <TextView
+                android:id="@+id/jitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="HTTP Response : "
+                android:textStyle="bold"
+                android:textColorHint="@color/black"/>
+            <TextView
+                android:id="@+id/response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Multimedia Latency  : "
+                android:textStyle="bold"
+                android:textColorHint="@color/black"/>
+            <TextView
+                android:id="@+id/aparat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

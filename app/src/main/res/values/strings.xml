@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Rhodium</string>
+    <color name="background">#1D1D1F</color>
+    <color name="white">#FFF</color>
+    <color name="light_Blue">#42DDF3</color>
+    <color name="gray">#97A4A6</color>
+    <color name="black">#000000</color>
+    <color name="cellInfoCard">#4624A9</color>
+</resources>
